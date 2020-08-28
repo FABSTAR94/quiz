@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="css/quiz.css">
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="center">
-            <h3>1. What does HTML stand for?</h3>
-            <!-- By adding the name="question1" to each option allows user to only select one -->
-            <input type="radio" name="question1" id="op1"> Hip Top Mop Lock <br>
-            <input type="radio" name="question1" id="op2"> Hyper Text Markup language <br>
-            <input type="radio" name="question1" id="op3"> Hyper Text Mark Level <br>
-            <input type="radio" name="question1" id="op4"> Hint Text Mall Language <br>
-
-            <h3>2. What does CSS stand for?</h3>
-            <!-- By adding the name="question1" to each option allows user to only select one -->
-            <input type="radio" name="question2" id="op5"> Cascading Style Sheets<br>
-            <input type="radio" name="question2" id="op6"> Cascading Side Sheets <br>
-            <input type="radio" name="question2" id="op7"> Cascade Side Streets <br>
-            <input type="radio" name="question2" id="op8"> Cascade Style Streets <br>
-
-            <h3>3. What does HTML stand for?</h3>
-            <!-- By adding the name="question1" to each option allows user to only select one -->
-            <input type="radio" name="question3" id="op9"> Hip Top Mop Lock <br>
-            <input type="radio" name="question3" id="op10"> Hyper Text Markup language <br>
-            <input type="radio" name="question3" id="op11"> Hyper Text Mark Level <br>
-            <input type="radio" name="question3" id="op12"> Hint Text Mall Language <br>
-
-            <h3>4. What does HTML stand for?</h3>
-            <!-- By adding the name="question1" to each option allows user to only select one -->
-            <input type="radio" name="question4" id="op13"> Hip Top Mop Lock <br>
-            <input type="radio" name="question4" id="op14"> Hyper Text Markup language <br>
-            <input type="radio" name="question4" id="op15"> Hyper Text Mark Level <br>
-            <input type="radio" name="question4" id="op16"> Hint Text Mall Language <br>
-
-            <div class="check">
-                <div id="chk1" style="margin-top: 30px;"></div>
-                <div id="chk2" style="margin-top: 90px;"></div>
-                <div id="chk3" style="margin-top: 95px;"></div>
-                <div id="chk4" style="margin-top: 90px;"></div>
-            </div>
-
-             <a onclick="nextClick()" href="#center2">Next</a>
-             <a href="">Previous</a>
-          </div>
-
-          <div id="center2">
-            <h3>5.What does HTML stand for?</h3>
-            <!-- By adding the name="question1" to each option allows user to only select one -->
-            <input type="radio" name="question5" id="op17"> Hip Top Mop Lock <br>
-            <input type="radio" name="question5" id="op18"> Hyper Text Markup language <br>
-            <input type="radio" name="question5" id="op19"> Hyper Text Mark Level <br>
-            <input type="radio" name="question5" id="op20"> Hint Text Mall Language <br>
-
-            <button id="submit" onclick="checkResult()">Submit</button>
-            <a onclick="previousClick()"href="#center">Previous</a>
-            <p id="score"></p>
-            <h2 id="percentage"></h2>
-            <div class="check">
-                <div style="margin-top: 30px;"></div>
-                <div id="chk5"></div>
-                <div id="chk6"></div>
-                <div id="chk7"></div>
-            </div>
+        <h3>1. What does HTML stand for?</h3>
+        <!-- By adding the name="question1" to each option allows user to only select one -->
+        <input type="radio" name="question1" id="op1"> Hip Top Mop Lock <br>
+        <input type="radio" name="question1" id="op2"> Hyper Text Markup language <br>
+        <input type="radio" name="question1" id="op3"> Hyper Text Mark Level <br>
+        <input type="radio" name="question1" id="op4"> Hint Text Mall Language <br>
+        <h3>2. What does CSS stand for?</h3>
+        <!-- By adding the name="question1" to each option allows user to only select one -->
+        <input type="radio" name="question2" id="op5"> Cascading Style Sheets<br>
+        <input type="radio" name="question2" id="op6"> Cascading Side Sheets <br>
+        <input type="radio" name="question2" id="op7"> Cascade Side Streets <br>
+        <input type="radio" name="question2" id="op8"> Cascade Style Streets <br>
+        <h3>3. What does HTML stand for?</h3>
+        <!-- By adding the name="question1" to each option allows user to only select one -->
+        <input type="radio" name="question3" id="op9"> Hip Top Mop Lock <br>
+        <input type="radio" name="question3" id="op10"> Hyper Text Markup language <br>
+        <input type="radio" name="question3" id="op11"> Hyper Text Mark Level <br>
+        <input type="radio" name="question3" id="op12"> Hint Text Mall Language <br>
+        <h3>4. What does HTML stand for?</h3>
+        <!-- By adding the name="question1" to each option allows user to only select one -->
+        <input type="radio" name="question4" id="op13"> Hip Top Mop Lock <br>
+        <input type="radio" name="question4" id="op14"> Hyper Text Markup language <br>
+        <input type="radio" name="question4" id="op15"> Hyper Text Mark Level <br>
+        <input type="radio" name="question4" id="op16"> Hint Text Mall Language <br>
+        <div class="check">
+            <div id="chk1" style="margin-top: 30px;"></div>
+            <div id="chk2" style="margin-top: 90px;"></div>
+            <div id="chk3" style="margin-top: 95px;"></div>
+            <div id="chk4" style="margin-top: 90px;"></div>
         </div>
+        <a onclick="nextClick()" href="#center2">Next</a>
+        <a href="">Previous</a>
+    </div>
+    <div id="center2">
+        <h3>5.What does HTML stand for?</h3>
+        <!-- By adding the name="question1" to each option allows user to only select one -->
+        <input type="radio" name="question5" id="op17"> Hip Top Mop Lock <br>
+        <input type="radio" name="question5" id="op18"> Hyper Text Markup language <br>
+        <input type="radio" name="question5" id="op19"> Hyper Text Mark Level <br>
+        <input type="radio" name="question5" id="op20"> Hint Text Mall Language <br>
+        <button id="submit" onclick="checkResult()">Submit</button>
+        <a onclick="previousClick()" href="#center">Previous</a>
+        <p id="score"></p>
+        <h2 id="percentage"></h2>
+        <div class="check">
+            <div style="margin-top: 30px;"></div>
+            <div id="chk5"></div>
+            <div id="chk6"></div>
+            <div id="chk7"></div>
+        </div>
+    </div>
+    <script src="js/quiz.js" type="text/javascript"></script>
+</body>
 
-
-
-
-  <script src="js/quiz.js"type="text/javascript"></script>
-  </body>
 </html>
