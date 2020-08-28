@@ -26,3 +26,18 @@ html, body {
 #center2 {
   visibility: hidden;
 }
+
+
+.check {
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 100px;
+    height: 100%;
+
+}
+
+.check div {
+    height: 50px;
+    width: 100%;
+}
