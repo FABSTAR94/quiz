@@ -1,0 +1,66 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+/*You need whats below the backgimage and whats in body, html in order to make background image take full space of screen*/
+.backgimage {
+    /* The image used */
+    background-image: url("https://miro.medium.com/max/1024/1*mjihOCOUJf4PEj189Td9_Q.jpeg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* card on center of banner*/
+.card {
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 200px;
+    /*rba(0,0,0,0.8) for black*/
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    color: black;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+/*button style*/
+.button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 12px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.button a:hover {
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: none;
+    background-color: #F0DB4F;
+}
