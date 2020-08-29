@@ -1,37 +1,45 @@
-html, body {
+html,
+body {
     height: 100%;
-    background-color: black;
+    background-color: #F0DB4F;
+    /*      background-image: linear-gradient(#323330, #F0DB4F);*/
+    /*overflow hidden is to hide the scroll on body*/
+    overflow: hidden;
 }
 
-#center, #center2{
+/*test card*/
+#center,
+#center2 {
 
-  width: 50%;
-  height: 100%;
-  background-color: white;
-  border: 6px solid yellow;
-  border-radius: 20px;
-  padding: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    width: 50%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
 }
+
+
 
 #center {
-  visibility: visible;
+    visibility: visible;
 }
 
 #center2 {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 
+/*check*/
 .check {
     position: absolute;
     top: 0;
-    right:0;
+    right: 0;
     width: 100px;
     height: 100%;
 
@@ -40,4 +48,43 @@ html, body {
 .check div {
     height: 50px;
     width: 100%;
+}
+
+#center h1 {
+    border-bottom: 2px solid #F0DB4F;
+}
+
+
+/*next and previous*/
+.np {
+    text-align: center;
+}
+
+.np a {
+    text-align: center;
+    color: white;
+}
+
+/*Submit button*/
+
+#submit {
+    background-color: #F0DB4F;
+    border: none;
+    color: white;
+    padding: 12px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    outline: none;
+    margin-top: 20px;
+    font-size: 16px;
+
+}
+
+#submit:hover {
+    background-color: black;
+    color: white;
 }
