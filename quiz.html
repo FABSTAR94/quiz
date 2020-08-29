@@ -8,35 +8,42 @@
 <body>
     <div id="center">
         <h1>Javascript Quiz</h1>
-        <h3>1. What does HTML stand for?</h3>
+        <h3>1. Inside which HTML element do we put the JavaScript?</h3>
         <!-- By adding the name="question1" to each option allows user to only select one -->
-        <input type="radio" name="question1" id="op1"> Hip Top Mop Lock <br>
-        <input type="radio" name="question1" id="op2"> Hyper Text Markup language <br>
-        <input type="radio" name="question1" id="op3"> Hyper Text Mark Level <br>
-        <input type="radio" name="question1" id="op4"> Hint Text Mall Language <br>
-        <h3>2. What does CSS stand for?</h3>
-        <!-- By adding the name="question1" to each option allows user to only select one -->
-        <input type="radio" name="question2" id="op5"> Cascading Style Sheets<br>
-        <input type="radio" name="question2" id="op6"> Cascading Side Sheets <br>
-        <input type="radio" name="question2" id="op7"> Cascade Side Streets <br>
-        <input type="radio" name="question2" id="op8"> Cascade Style Streets <br>
-        <h3>3. What does HTML stand for?</h3>
-        <!-- By adding the name="question1" to each option allows user to only select one -->
-        <input type="radio" name="question3" id="op9"> Hip Top Mop Lock <br>
-        <input type="radio" name="question3" id="op10"> Hyper Text Markup language <br>
-        <input type="radio" name="question3" id="op11"> Hyper Text Mark Level <br>
-        <input type="radio" name="question3" id="op12"> Hint Text Mall Language <br>
-        <h3>4. What does HTML stand for?</h3>
-        <!-- By adding the name="question1" to each option allows user to only select one -->
-        <input type="radio" name="question4" id="op13"> Hip Top Mop Lock <br>
-        <input type="radio" name="question4" id="op14"> Hyper Text Markup language <br>
-        <input type="radio" name="question4" id="op15"> Hyper Text Mark Level <br>
-        <input type="radio" name="question4" id="op16"> Hint Text Mall Language <br>
+        <input type="radio" name="question1" id="op1"> &ltjavascript&gt <br>
+        <input type="radio" name="question1" id="op2"> &ltscript&gt <br>
+        <input type="radio" name="question1" id="op3"> &ltscripting&gt <br>
+        <input type="radio" name="question1" id="op4"> &ltjs&gt <br>
+        <h3>2. Where is the correct place to insert a JavaScript?</h3>
+        <!-- By adding the name="question2" to each option allows user to only select one -->
+        <input type="radio" name="question2" id="op5"> Both the &lthead&gt section and the &ltbody&gt section are correct.<br>
+        <input type="radio" name="question2" id="op6"> The &lthead&gt section. <br>
+        <input type="radio" name="question2" id="op7"> The &ltbody&gt section. <br>
+        <input type="radio" name="question2" id="op8"> The &lthtml&gt section. <br>
+        <h3>3. What is the correct syntax for referring to an external script called "xxx.js"?</h3>
+        <!-- By adding the name="question3" to each option allows user to only select one -->
+        <input type="radio" name="question3" id="op9"> &ltscript href="xxx.js"&gt <br>
+        <input type="radio" name="question3" id="op10"> &ltscript src="xxx.js"&gt <br>
+        <input type="radio" name="question3" id="op11"> &ltscript name="xxx.js"&gt <br>
+        <input type="radio" name="question3" id="op12"> &ltscript type="xxx.js"&gt <br>
+        <h3>4. How do you write "Hello World" in an alert box?</h3>
+        <!-- By adding the name="question4" to each option allows user to only select one -->
+        <input type="radio" name="question4" id="op13"> msgBox("Hello World"); <br>
+        <input type="radio" name="question4" id="op14"> msg("Hello World"); <br>
+        <input type="radio" name="question4" id="op15"> alert("Hello World"); <br>
+        <input type="radio" name="question4" id="op16"> alertBox("Hello World"); <br>
+        <h3>5. How do you create a function in JavaScript??</h3>
+        <!-- By adding the name="question5" to each option allows user to only select one -->
+        <input type="radio" name="question5" id="op17"> function:myFunction() <br>
+        <input type="radio" name="question5" id="op18"> function = myFunction() <br>
+        <input type="radio" name="question5" id="op19"> function myFunction <br>
+        <input type="radio" name="question5" id="op20"> function myFunction() <br>
         <div class="check">
             <div id="chk1" style="margin-top: 30px;"></div>
             <div id="chk2" style="margin-top: 90px;"></div>
             <div id="chk3" style="margin-top: 95px;"></div>
             <div id="chk4" style="margin-top: 90px;"></div>
+            <div id="chk5" style="margin-top: 90px;"></div>
         </div>
         <div class="np">
             <a onclick="nextClick()" href="#center2">Next</a>
@@ -44,12 +51,37 @@
         </div>
     </div>
     <div id="center2">
-        <h3>5.What does HTML stand for?</h3>
-        <!-- By adding the name="question1" to each option allows user to only select one -->
-        <input type="radio" name="question5" id="op17"> Hip Top Mop Lock <br>
-        <input type="radio" name="question5" id="op18"> Hyper Text Markup language <br>
-        <input type="radio" name="question5" id="op19"> Hyper Text Mark Level <br>
-        <input type="radio" name="question5" id="op20"> Hint Text Mall Language <br>
+        <h3>6. How do you call a function named "myFunction"?</h3>
+        <!-- By adding the name="question6" to each option allows user to only select one -->
+        <input type="radio" name="question6" id="op21"> myFunction() <br>
+        <input type="radio" name="question6" id="op22"> call myFunction() <br>
+        <input type="radio" name="question6" id="op23"> call function myFunction() <br>
+        <input type="radio" name="question6" id="op24"> myFunction() call <br>
+        <h3>7. How do you add a comment in JavaScript?</h3>
+        <!-- By adding the name="question7" to each option allows user to only select one -->
+        <input type="radio" name="question7" id="op25"> 'This is a comment <br>
+        <input type="radio" name="question7" id="op26"> &lt!--This is a comment--&gt <br>
+        <input type="radio" name="question7" id="op27"> //This is a comment <br>
+        <input type="radio" name="question7" id="op28"> //This is a comment// <br>
+        <h3>8. How to insert a comment that has more than one line?</h3>
+        <!-- By adding the name="question8" to each option allows user to only select one -->
+        <input type="radio" name="question8" id="op29"> &lt!--This comment has more than one line--&gt <br>
+        <input type="radio" name="question8" id="op30"> //This comment has more than one line// <br>
+        <input type="radio" name="question8" id="op31"> /This comment has more than one line/ <br>
+        <input type="radio" name="question8" id="op32"> /*This comment has more than one line*/ <br>
+        <h3>9. What is the correct way to write a JavaScript array?</h3>
+        <!-- By adding the name="question9" to each option allows user to only select one -->
+        <input type="radio" name="question9" id="op33"> var colors = "red", "green", "blue" <br>
+        <input type="radio" name="question9" id="op34"> var colors = ["red", "green", "blue"] <br>
+        <input type="radio" name="question9" id="op35"> var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue") <br>
+        <input type="radio" name="question9" id="op36"> var colors = (1:"red", 2:"green", 3:"blue") <br>
+        <h3>10. How do you declare a JavaScript variable?</h3>
+        <!-- By adding the name="question10" to each option allows user to only select one -->
+        <input type="radio" name="question10" id="op37"> var carName;  <br>
+        <input type="radio" name="question10" id="op38"> v carName; <br>
+        <input type="radio" name="question10" id="op39"> variable carName; <br>
+        <input type="radio" name="question10" id="op40"> var carname; <br>
+
         <button id="submit" onclick="checkResult()">Submit</button>
         <div class="np">
             <a onclick="previousClick()" href="#center">Previous</a>
@@ -58,9 +90,11 @@
         <h2 id="percentage"></h2>
         <div class="check">
             <div style="margin-top: 30px;"></div>
-            <div id="chk5"></div>
-            <div id="chk6"></div>
-            <div id="chk7"></div>
+            <div id="chk6" style="margin-top: 90px;"></div>
+            <div id="chk7" style="margin-top: 90px;"></div>
+            <div id="chk8" style="margin-top: 90px;"></div>
+            <div id="chk9" style="margin-top: 90px;"></div>
+            <div id="chk10" style="margin-top: 90px;"></div>
         </div>
     </div>
     <script src="js/quiz.js" type="text/javascript"></script>
