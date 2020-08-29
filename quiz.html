@@ -7,6 +7,7 @@
 
 <body>
     <div id="center">
+        <h1>Javascript Quiz</h1>
         <h3>1. What does HTML stand for?</h3>
         <!-- By adding the name="question1" to each option allows user to only select one -->
         <input type="radio" name="question1" id="op1"> Hip Top Mop Lock <br>
@@ -37,8 +38,10 @@
             <div id="chk3" style="margin-top: 95px;"></div>
             <div id="chk4" style="margin-top: 90px;"></div>
         </div>
-        <a onclick="nextClick()" href="#center2">Next</a>
-        <a href="home.html">Previous</a>
+        <div class="np">
+            <a onclick="nextClick()" href="#center2">Next</a>
+            <a href="home.html">Previous</a>
+        </div>
     </div>
     <div id="center2">
         <h3>5.What does HTML stand for?</h3>
@@ -48,7 +51,9 @@
         <input type="radio" name="question5" id="op19"> Hyper Text Mark Level <br>
         <input type="radio" name="question5" id="op20"> Hint Text Mall Language <br>
         <button id="submit" onclick="checkResult()">Submit</button>
-        <a onclick="previousClick()" href="#center">Previous</a>
+        <div class="np">
+            <a onclick="previousClick()" href="#center">Previous</a>
+        </div>
         <p id="score"></p>
         <h2 id="percentage"></h2>
         <div class="check">
