@@ -1,6 +1,7 @@
 // NEXT AND PREVIOUS LINKS
 var firstPage = document.getElementById('center');
 var secondPage = document.getElementById('center2');
+var thirdPage = document.getElementById('center3');
 
 function nextClick() {
     firstPage.style["visibility"] = "hidden";
@@ -10,6 +11,18 @@ function nextClick() {
 function previousClick() {
     firstPage.style["visibility"] = "visible";
     secondPage.style["visibility"] = "hidden";
+}
+
+function nextClick2() {
+    firstPage.style["visibility"] = "hidden";
+    secondPage.style["visibility"] = 'hidden';
+    thirdPage.style["visibility"] = 'visible';
+}
+
+function previousClick2() {
+    firstPage.style["visibility"] = "hidden";
+    secondPage.style["visibility"] = "visible";
+    thirdPage.style["visibility"] = "hidden";
 }
 
 
@@ -27,6 +40,11 @@ function checkResult() {
     answer8 = document.getElementById("op32");
     answer9 = document.getElementById("op34");
     answer10 = document.getElementById("op37");
+    answer11 = document.getElementById("op44");
+    answer12 = document.getElementById("op47");
+    answer13 = document.getElementById("op49");
+    answer14 = document.getElementById("op54");
+    answer15 = document.getElementById("op60");
 
     //Checked is a property in js in which tells if the radio button is checked.
     //The if stmts checks if the correct answers are selected it should increase variable add by 1. In the end it should be a total of 5 points
@@ -128,13 +146,58 @@ function checkResult() {
         document.getElementById('chk10').innerHTML = "&#10006";
         document.getElementById('chk10').style.color = "red";
     }
+      //answer11
+       if (answer11.checked == true) {
+        add++;
+        document.getElementById('chk11').innerHTML = "&#10004";
+        document.getElementById('chk11').style.color = "green";
+    } else {
+        document.getElementById('chk11').innerHTML = "&#10006";
+        document.getElementById('chk11').style.color = "red";
+    }
+     //answer12
+       if (answer12.checked == true) {
+        add++;
+        document.getElementById('chk12').innerHTML = "&#10004";
+        document.getElementById('chk12').style.color = "green";
+    } else {
+        document.getElementById('chk12').innerHTML = "&#10006";
+        document.getElementById('chk12').style.color = "red";
+    }
+         //answer13
+       if (answer13.checked == true) {
+        add++;
+        document.getElementById('chk13').innerHTML = "&#10004";
+        document.getElementById('chk13').style.color = "green";
+    } else {
+        document.getElementById('chk13').innerHTML = "&#10006";
+        document.getElementById('chk13').style.color = "red";
+    }
+        //answer14
+       if (answer14.checked == true) {
+        add++;
+        document.getElementById('chk14').innerHTML = "&#10004";
+        document.getElementById('chk14').style.color = "green";
+    } else {
+        document.getElementById('chk14').innerHTML = "&#10006";
+        document.getElementById('chk14').style.color = "red";
+    }
+    //answer15
+       if (answer15.checked == true) {
+        add++;
+        document.getElementById('chk15').innerHTML = "&#10004";
+        document.getElementById('chk15').style.color = "green";
+    } else {
+        document.getElementById('chk15').innerHTML = "&#10006";
+        document.getElementById('chk15').style.color = "red";
+    }
 
     // This adds the total score.
-    document.getElementById("score").innerHTML = "Score:" + " " + add;
+    document.getElementById("score").innerHTML = "Score:" + " " + add + "/15";
 
     /* formula for finding percentage is how many questions you got right by the add
     variable multiplied by 100 nd divided by total number of questions.*/
-    var percentage = add * 100 / 10;
+    var percentage = Math.floor(add * 100 / 15);
     document.getElementById('percentage').innerHTML = percentage + "%";
     document.getElementById('percentage').style.color = "green";
     if (percentage < 50) {

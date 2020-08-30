@@ -9,7 +9,7 @@ body {
 
 /*test card*/
 #center,
-#center2 {
+#center2, #center3 {
 
     width: 50%;
     height: 80%;
@@ -31,6 +31,10 @@ body {
 }
 
 #center2 {
+    visibility: hidden;
+}
+
+#center3 {
     visibility: hidden;
 }
 
