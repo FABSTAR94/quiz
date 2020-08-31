@@ -74,6 +74,7 @@ body {
 /*next and previous*/
 .np {
     text-align: center;
+    bottom: 5px;
 }
 
 .np a {
@@ -97,7 +98,6 @@ body {
     outline: none;
     margin-top: 20px;
     font-size: 16px;
-
 }
 
 #submit:hover {

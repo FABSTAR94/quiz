@@ -210,7 +210,7 @@ function checkResult() {
     document.getElementById('percentage').style.color = "green";
     if (percentage < 50) {
         document.getElementById('percentage').style.color = "red";
-        document.getElementById('percentage').innerHTML = percentage + "%" + " Please review and come bach when ready."
+        document.getElementById('percentage').innerHTML = percentage + "%" + " Please review and come back when ready."
     }
 
     if (percentage < 100 && percentage > 50) {
