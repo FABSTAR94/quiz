@@ -2,6 +2,7 @@
 var firstPage = document.getElementById('center');
 var secondPage = document.getElementById('center2');
 var thirdPage = document.getElementById('center3');
+var fourthPage = document.getElementById('result');
 
 function nextClick() {
     firstPage.style["visibility"] = "hidden";
@@ -23,6 +24,13 @@ function previousClick2() {
     firstPage.style["visibility"] = "hidden";
     secondPage.style["visibility"] = "visible";
     thirdPage.style["visibility"] = "hidden";
+}
+
+function previousClick3() {
+    firstPage.style["visibility"] = "hidden";
+    secondPage.style["visibility"] = "hidden";
+    thirdPage.style["visibility"] = "visible";
+    fourthPage.style["visibility"] = "hidden";
 }
 
 
@@ -202,10 +210,23 @@ function checkResult() {
     document.getElementById('percentage').style.color = "green";
     if (percentage < 50) {
         document.getElementById('percentage').style.color = "red";
+        document.getElementById('percentage').innerHTML = percentage + "%" + " Please review and come bach when ready."
     }
+
+    if (percentage < 100 && percentage > 50) {
+      document.getElementById('percentage').innerHTML = percentage + "%" + " Your almost there. Please Review."
+    }
+
 
     if (percentage == 100) {
-        document.getElementById('percentage').innerHTML = percentage + "%  Great Job!";
+        document.getElementById('percentage').innerHTML = percentage + "%  Awesome Job! You got all of them right!";
     }
 
+    firstPage.style["visibility"] = "hidden";
+    secondPage.style["visibility"] = "hidden";
+    thirdPage.style["visibility"] = "hidden";
+    fourthPage.style["visibility"] = "visible";
+
 }
+
+
