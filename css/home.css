@@ -37,7 +37,7 @@ html {
 }
 
 /*button style*/
-.button {
+.button  {
     background-color: black;
     border: none;
     color: white;
@@ -48,10 +48,10 @@ html {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 16px;
-    outline: none
+    outline: none;
 }
 
-.button a {
+ a .button {
     text-decoration: none;
     color: white;
     font-size: 18px;
